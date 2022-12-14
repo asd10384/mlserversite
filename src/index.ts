@@ -15,6 +15,7 @@ app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname + "/ejs"));
 app.use(favicon(path.join(__dirname, "image/favicon.ico")));
 app.use('/favicon.ico', express.static('/image/favicon.ico'));
+app.use('/mcfile', express.static(path.join(__dirname, "../mcfile")));
 app.use('/file', express.static(__dirname + "/"));
 
 const route = readdirSync(join(__dirname, 'routes')).filter(file => file.endsWith('.js') || file.endsWith('.ts'));
