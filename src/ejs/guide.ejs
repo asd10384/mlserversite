@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <%- include ("./header.ejs") %>
+
+  <title>ML서버 <%- title %></title>
+
+  <link rel="stylesheet" href="/file/css/main.css">
+</head>
+<body>
+  <h2>ML서버 <%- title %></h2>
+<% if (datas) { %>
+  <div class="back">
+    <a href="/guide<%- guides %>">돌아가기</a>
+  </div>
+  <%- datas %>
+<% } else { %>
+  <div class="back">
+    <a href="/">돌아가기</a>
+  </div>
+  <%- guides %>
+<% } %>
+</body>
+</html>
