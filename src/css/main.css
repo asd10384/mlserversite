@@ -1,0 +1,41 @@
+
+body {
+  margin-top: 20px;
+  text-align: center;
+}
+h2 {
+  font-size: 45px;
+}
+a {
+  font-weight: bold;
+  color: rgba(0, 0, 255, 0.8);
+  text-decoration: none;
+}
+a:hover {
+  color: rgba(0, 0, 255, 0.4);
+}
+.back {
+  font-size: 25px;
+  margin-bottom: 40px;
+}
+.back a {
+  color: rgba(0, 255, 0, 0.8);
+}
+.back a:hover {
+  color: rgba(0, 255, 0, 0.4);
+}
+.a {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+.text {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.text a {
+  font-size: 30px;
+}
+.err {
+  font-size: 30px;
+  color: rgba(255, 0, 0, 0.8);
+}
