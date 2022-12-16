@@ -43,3 +43,7 @@ a:hover {
 .title {
   font-weight: bold;
 }
+
+img {
+  margin: 10px 0px;
+}
