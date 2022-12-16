@@ -27,7 +27,7 @@ export default Router().get("/guide", async (req, res) => {
     }
     let output = datas.map(file => {
       const datass: string = readFileSync(join(defaultpath, req.params.getguide, file), { encoding: "utf8" });
-      return `<div class="text"><div class="title">${file.replace(".txt","")}</div>${datass}</div>`;
+      return `<div class="text"><div class="title">${file.replace(".txt","")}</div>${datass.replace(/\r\n/g,"<br/>")}</div>`;
     });
     return res.status(200).render("guide", {
       title: `${req.params.getguide} 목록`,
